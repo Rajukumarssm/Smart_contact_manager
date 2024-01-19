@@ -3,9 +3,9 @@ Smart way of managing contacts<br />
 
 
 Language of Implementation: Java<br />
-Operating System: macOS<br />
+Operating System: windows<br />
 Back end: JAVA<br />
-Front end:JS, HTML ,CSS.<br />
+Front end:Thymeleaf, HTML ,CSS.<br />
 Role: Development<br />
 DESCRIPTION:
 * Enhanced user privacy better than normal contact managers
