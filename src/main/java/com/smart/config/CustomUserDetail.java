@@ -15,18 +15,19 @@ import com.smart.entities.User;
 // inbuilt method present that uses as purpose of spring security
 public class CustomUserDetail implements UserDetails{
 	
-	private User user;// by using user we can get all details about user like  role email etc
+	private User user;// to store user type details.
 	 
 
 	public CustomUserDetail(User user) {
 		super();
 		this.user = user;
+	//yha jo userdeatilsserviceimpl me new customuserdetail constructor me  jo user data pass kiye yha mil jayega
 	}
-	//here describe the authority of user yha user ka role hi to authoriyu hai
+	//here describe the authority of user yha user ka role hi to authority hai
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		SimpleGrantedAuthority simpleGrantedAuthority=new SimpleGrantedAuthority(user.getRole());
-		return List.of(simpleGrantedAuthority);//return list of all role yype like admin or user
+		return List.of(simpleGrantedAuthority);//return list of all role type like admin or user
 	}
 
 	@Override
